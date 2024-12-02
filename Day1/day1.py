@@ -1,4 +1,4 @@
-f = open("input.txt")
+f = open("Day1/input.txt")
 l1 = []
 l2 = []
 for line in f:

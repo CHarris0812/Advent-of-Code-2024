@@ -53,9 +53,6 @@ def reachesExit(guardPos, guardDir):
         else:
             guardPos = (r, c)
 
-import time
-t = time.time()
-
 count = 0
 for i in range(len(grid)):
     for j in range(len(grid[0])):
@@ -69,5 +66,3 @@ for i in range(len(grid)):
         if not reachesExit(guardPos, guardDir): count += 1
         grid[i] = grid[i][:j] + "X" + grid[i][j+1:]
 print(count)
-
-print(time.time() - t)
